@@ -1,8 +1,11 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import HeroImage from "../images/hero-image.webp";
 
 const inter = Inter({ subsets: ["latin"] });
 import Link from "next/link";
+import CalendarIcon from "@/components/CalendarIcon";
+import Header from "@/components/blocks/Header";
 
 export default function Component() {
   return (
@@ -20,56 +23,27 @@ export default function Component() {
           </div>
         </div>
       </div>
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-[#6366F1] text-gray-50">
-        <Link
-          href="#"
-          className="flex items-center justify-center"
-          prefetch={false}
-        >
-          <MusicIcon className="h-6 w-6 text-[#FCD34D]" />
-          <span className="sr-only">Glastonbury Festival</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#FCD34D]"
-            prefetch={false}
-          >
-            Event Details
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#FCD34D]"
-            prefetch={false}
-          >
-            Lineup
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#FCD34D]"
-            prefetch={false}
-          >
-            Tickets
-          </Link>
-        </nav>
-      </header>
+
+      <Header />
+
       <main className="flex-1">
         <section className="relative w-full h-[80vh] overflow-hidden">
-          <video
-            src="/glastonbury-hero.mp4"
-            autoPlay
-            loop
-            muted
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-[#6366F1]/50 flex flex-col items-center justify-center text-center space-y-4 px-4">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl text-[#FCD34D]">
-              Gores Glastonbury Festival 2024!
-            </h1>
-            <p className="max-w-[600px] text-[#F3F4F6] md:text-xl">
-              Experience the ultimate music festival in the heart of Rainhill,
-              UK. Featuring the biggest names in music, arts, and culture.
-            </p>
+          {/* style the image so it does not resize just that the ends get chopped off */}
+          <div className="w-full relative h-[550px]">
+            <Image
+              src={HeroImage}
+              alt={"Hero image"}
+              className="object-cover object-center absolute top-0"
+            />
+            <div className="z-10 top-1/2 absolute">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl text-[#FCD34D]">
+                Gores Glastonbury Festival 2024!
+              </h1>
+              <p className="max-w-[600px] text-[#F3F4F6] md:text-xl">
+                Experience the ultimate music festival in the heart of Rainhill,
+                UK. Featuring the biggest names in music, arts, and culture.
+              </p>
+            </div>
           </div>
         </section>
         <section
@@ -364,48 +338,5 @@ export default function Component() {
         </div>
       </footer>
     </div>
-  );
-}
-
-function CalendarIcon({ className }: { className: string }) {
-  return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M8 2v4" />
-      <path d="M16 2v4" />
-      <rect width="18" height="18" x="3" y="4" rx="2" />
-      <path d="M3 10h18" />
-    </svg>
-  );
-}
-
-function MusicIcon({ className }: { className: string }) {
-  return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M9 18V5l12-2v13" />
-      <circle cx="6" cy="18" r="3" />
-      <circle cx="18" cy="16" r="3" />
-    </svg>
   );
 }

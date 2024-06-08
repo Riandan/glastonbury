@@ -6,49 +6,84 @@ const inter = Inter({ subsets: ["latin"] });
 import Link from "next/link";
 import CalendarIcon from "@/components/CalendarIcon";
 import Header from "@/components/blocks/Header";
+import CountdownBanner from "@/components/blocks/CountdownBanner";
 
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-[100dvh]">
-      <div className="bg-[#6366F1] text-[#FCD34D] py-2 text-center text-sm font-medium">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex items-center justify-center gap-2">
-            <CalendarIcon className="h-4 w-4" />
-            <span>
-              Glastonbury Festival starts in{" "}
-              <span className="font-bold">
-                <div />
-              </span>
-            </span>
-          </div>
-        </div>
-      </div>
+    <div className="flex flex-col min-h-[100vh] bg-primary-500">
+      <CountdownBanner date={new Date("2024-06-29")} />
 
       <Header />
 
       <main className="flex-1">
-        <section className="relative w-full h-[80vh] overflow-hidden">
+        <section className="relative w-full overflow-hidden">
           {/* style the image so it does not resize just that the ends get chopped off */}
-          <div className="w-full relative h-[550px]">
+          <div className="w-full relative sm-[330px] h-[480px]">
             <Image
               src={HeroImage}
               alt={"Hero image"}
-              className="object-cover object-center absolute top-0"
+              className="object-cover object-center absolute top-0 h-full w-full"
             />
-            <div className="z-10 top-1/2 absolute">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl text-[#FCD34D]">
+            <div className="absolute top-0 inset-x-0 h-1/3 bg-gradient-to-b from-primary-500 to-transparent z-10"></div>
+            <div className="absolute bottom-0 inset-x-0 h-1/3 bg-gradient-to-t from-primary-500 to-transparent z-10"></div>
+            <div className="absolute inset-0 bg-primary-500 opacity-50 z-10"></div>
+            <div className="z-10 h-full text-center w-full absolute inset-y-16 p-6">
+              <h1 className="text-6xl font-bold tracking-tighter  md:text-7xl text-[#FCD34D]">
                 Gores Glastonbury Festival 2024!
               </h1>
-              <p className="max-w-[600px] text-[#F3F4F6] md:text-xl">
+              <p className="text-[#F3F4F6] md:text-xl mt-8">
                 Experience the ultimate music festival in the heart of Rainhill,
                 UK. Featuring the biggest names in music, arts, and culture.
               </p>
             </div>
           </div>
         </section>
-        <section
+        <section className="w-full -mt-14 md:-mt-14 z-20 relative min-h-[350px]">
+          <div className="absolute top-0 inset-x-0 h-1/3 bg-gradient-to-b from-transparent via-primary-500 to-transparent z-10"></div>
+          <div className="absolute w-full z-30">
+            <div className="grid center grid-cols-2 md:grid-cols-4 md:max-w-[75%] md:m-auto w-full gap-1">
+              <div className=" h-40 w-100 p-2">
+                <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
+                  <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
+                  <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
+                    June 29 - July 1, 2024
+                  </h2>
+                </div>
+              </div>
+
+              <div className=" h-40 w-100 p-2">
+                <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
+                  <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
+                  <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
+                    June 29 - July 1, 2024
+                  </h2>
+                </div>
+              </div>
+
+              <div className=" h-40 w-100 p-2">
+                <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
+                  <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
+                  <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
+                    June 29 - July 1, 2024
+                  </h2>
+                </div>
+              </div>
+
+              <div className=" h-40 w-100 p-2">
+                <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
+                  <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
+                  <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
+                    June 29 - July 1, 2024
+                  </h2>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        {/* <section
           id="event-details"
-          className="w-full py-12 md:py-24 lg:py-32 bg-[#F3F4F6] dark:bg-[#1F2937]"
+          className="w-full py-12 md:py-24 lg:py-32 dark:bg-[#1F2937]"
         >
           <div className="container px-4 md:px-6 space-y-8">
             <div className="space-y-2 text-center">
@@ -88,7 +123,7 @@ export default function Component() {
         </section>
         <section
           id="lineup"
-          className="w-full py-12 md:py-24 lg:py-32 bg-[#F3F4F6] dark:bg-[#1F2937]"
+          className="w-full py-12 md:py-24 lg:py-32 dark:bg-[#1F2937]"
         >
           <div className="container px-4 md:px-6 space-y-8">
             <div className="space-y-2 text-center">
@@ -154,7 +189,7 @@ export default function Component() {
         </section>
         <section
           id="tickets"
-          className="w-full py-12 md:py-24 lg:py-32 bg-[#F3F4F6] dark:bg-[#1F2937]"
+          className="w-full py-12 md:py-24 lg:py-32 dark:bg-[#1F2937]"
         >
           <div className="container px-4 md:px-6 space-y-8">
             <div className="space-y-2 text-center">
@@ -169,16 +204,16 @@ export default function Component() {
             <div className="flex justify-center">
               <Link
                 href="#"
-                className="inline-flex h-10 items-center justify-center rounded-md bg-[#6366F1] px-8 text-sm font-medium text-[#F3F4F6] shadow transition-colors hover:bg-[#4F46E5] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4F46E5] disabled:pointer-events-none disabled:opacity-50 dark:bg-[#F3F4F6] dark:text-[#6366F1] dark:hover:bg-[#E5E7EB] dark:focus-visible:ring-[#D1D5DB]"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-[#6366F1] px-8 text-sm font-medium text-[#F3F4F6] shadow transition-colors hover:bg-[#4F46E5] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4F46E5] disabled:pointer-events-none disabled:opacity-50 dark dark:text-[#6366F1] dark:hover:bg-[#E5E7EB] dark:focus-visible:ring-[#D1D5DB]"
                 prefetch={false}
               >
                 Buy Tickets
               </Link>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
-      <footer className="bg-[#6366F1] text-[#F3F4F6] p-6 md:py-12 w-full">
+      {/* <footer className="bg-[#6366F1] text-[#F3F4F6] p-6 md:py-12 w-full">
         <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
           <div className="grid gap-1">
             <h3 className="font-semibold text-[#FCD34D]">Festival</h3>
@@ -336,7 +371,7 @@ export default function Component() {
             </Link>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

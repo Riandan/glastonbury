@@ -29,7 +29,7 @@ export default function Component() {
             <div className="absolute inset-0 bg-primary-500 opacity-50 z-10"></div>
             <div className="z-10 h-full text-center w-full absolute inset-y-16 p-6">
               <h1 className="text-6xl font-bold tracking-tighter  md:text-7xl text-[#FCD34D]">
-                Gores Glastonbury Festival 2024!
+                Gorstonbury Festival 2024!
               </h1>
               <p className="text-[#F3F4F6] md:text-xl mt-8">
                 Experience the ultimate music festival in the heart of Rainhill,
@@ -38,47 +38,73 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full -mt-14 md:-mt-14 z-20 relative min-h-[350px]">
+        <section className="w-full -mt-14 md:-mt-14 z-20 relative min-h-[300px] md:min-h-[170px]">
           <div className="absolute top-0 inset-x-0 h-1/3 bg-gradient-to-b from-transparent via-primary-500 to-transparent z-10"></div>
           <div className="absolute w-full z-30">
             <div className="grid center grid-cols-2 md:grid-cols-4 md:max-w-[75%] md:m-auto w-full gap-1">
-              <div className=" h-40 w-100 p-2">
-                <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
-                  <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
-                  <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
-                    June 29 - July 1, 2024
-                  </h2>
+              <a>
+                <div className=" h-40 w-100 p-2">
+                  <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
+                    <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
+                    <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
+                      June 29 2024
+                    </h2>
+                  </div>
                 </div>
-              </div>
+              </a>
 
-              <div className=" h-40 w-100 p-2">
-                <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
-                  <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
-                  <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
-                    June 29 - July 1, 2024
-                  </h2>
+              <a href="/gallery">
+                <div className=" h-40 w-100 p-2">
+                  <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
+                    <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
+                    <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
+                      2023 Gorstonbury Photos
+                    </h2>
+                  </div>
                 </div>
-              </div>
+              </a>
 
-              <div className=" h-40 w-100 p-2">
-                <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
-                  <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
-                  <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
-                    June 29 - July 1, 2024
-                  </h2>
+              <a href="/ticket-info">
+                <div className=" h-40 w-100 p-2">
+                  <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
+                    <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
+                    <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
+                      Event Information
+                    </h2>
+                  </div>
                 </div>
-              </div>
+              </a>
 
-              <div className=" h-40 w-100 p-2">
-                <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
-                  <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
-                  <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
-                    June 29 - July 1, 2024
-                  </h2>
+              <a href="/ticket-info">
+                <div className=" h-40 w-100 p-2">
+                  <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
+                    <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
+                    <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
+                      Ticket Information
+                    </h2>
+                  </div>
                 </div>
-              </div>
-
+              </a>
             </div>
+          </div>
+        </section>
+        <section>
+          <div className="w-full p-4 pt-8 md:p-8">
+            <h2 className="text-3xl text-[#FCD34D] text-bold">
+              Welcome to Gorestonbury 2024!
+            </h2>
+            <p className="text-white">
+              We hope you’re excited. By now you will have received your ticket
+              bundle in the post, along with some small bits and bobs to get you
+              festival-ready. Please keep your ticket safe, as you will need
+              this to enter the festival. The event will be taking place on
+              Saturday 29th June. Arrival time will be 4pm – 4.10pm, NO LATER.
+              All attendees must arrive within this timeframe, as you will be
+              let into the festival as a collective group. Any stragglers will
+              not only be left behind, but will be wandering the streets looking
+              foolish – don’t be foolish. We hope you’re excited to attend
+              Gorestonbury and we look forward to seeing you soon!
+            </p>
           </div>
         </section>
         {/* <section
@@ -213,33 +239,33 @@ export default function Component() {
           </div>
         </section> */}
       </main>
-      {/* <footer className="bg-[#6366F1] text-[#F3F4F6] p-6 md:py-12 w-full">
+      <footer className="bg-primary-400 text-[#F3F4F6] p-6 md:py-12 w-full">
         <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
           <div className="grid gap-1">
             <h3 className="font-semibold text-[#FCD34D]">Festival</h3>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               About
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               History
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Sustainability
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
@@ -249,28 +275,28 @@ export default function Component() {
           <div className="grid gap-1">
             <h3 className="font-semibold text-[#FCD34D]">Lineup</h3>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Headliners
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Performers
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Stages
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
@@ -280,28 +306,28 @@ export default function Component() {
           <div className="grid gap-1">
             <h3 className="font-semibold text-[#FCD34D]">Tickets</h3>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Purchase
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Resale
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Packages
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
@@ -311,28 +337,28 @@ export default function Component() {
           <div className="grid gap-1">
             <h3 className="font-semibold text-[#FCD34D]">Venue</h3>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Map
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Camping
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Accessibility
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
@@ -342,28 +368,28 @@ export default function Component() {
           <div className="grid gap-1">
             <h3 className="font-semibold text-[#FCD34D]">Follow Us</h3>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Facebook
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Twitter
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
               Instagram
             </Link>
             <Link
-              href="#"
+              href="fake"
               className="hover:underline underline-offset-4 text-[#F3F4F6]"
               prefetch={false}
             >
@@ -371,7 +397,7 @@ export default function Component() {
             </Link>
           </div>
         </div>
-      </footer> */}
+      </footer>
     </div>
   );
 }

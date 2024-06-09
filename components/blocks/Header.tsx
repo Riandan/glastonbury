@@ -11,7 +11,7 @@ const Header: React.FC<Props> = (props) => {
 
     return <header className="px-4 lg:px-6 h-14 flex items-center bg-primary-500 text-gray-50">
     <Link
-      href="#"
+      href="/"
       className="flex items-center justify-center"
       prefetch={false}
     >
@@ -20,7 +20,7 @@ const Header: React.FC<Props> = (props) => {
     </Link>
     <nav className="ml-auto flex gap-4 sm:gap-6">
       <Link
-        href="#"
+        href="/event"
         className="text-sm font-medium hover:underline underline-offset-4 text-secondary-500"
         prefetch={false}
       >
@@ -39,6 +39,13 @@ const Header: React.FC<Props> = (props) => {
         prefetch={false}
       >
         Tickets
+      </Link>
+      <Link
+        href="gallery"
+        className="text-sm font-medium hover:underline underline-offset-4 text-secondary-500"
+        prefetch={false}
+      >
+        2023 Gallery
       </Link>
     </nav>
   </header>;

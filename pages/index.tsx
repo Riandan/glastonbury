@@ -64,7 +64,7 @@ export default function Component() {
                 </div>
               </a>
 
-              <a href="/ticket-info">
+              <a href="/event">
                 <div className=" h-40 w-100 p-2">
                   <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
                     <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />

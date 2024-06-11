@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import { Gallery as GalleryGrid } from "react-grid-gallery";
 import CountdownBanner from "@/components/blocks/CountdownBanner";
+import Footer from "@/components/blocks/Footer";
 
 // Define the page component
 const Gallery = () => {
@@ -21,6 +22,23 @@ const Gallery = () => {
         </p>
       </div>
       <div className="p-8">
+        <h2 className="text-secondary-500 text-4xl font-bold">
+          Welcome to Gorstonbury 2024!
+        </h2>
+        <p className="text-white my-2">
+          We hope you’re excited. By now you will have received your ticket
+          bundle in the post, along with some small bits and bobs to get you
+          festival-ready. Please keep your ticket safe, as you will need this to
+          enter the festival. The event will be taking place on Saturday 29th
+          June. Arrival time will be 4pm – 4.10pm, NO LATER. All attendees must
+          arrive within this timeframe, as you will be let into the festival as
+          a collective group. Any stragglers will not only be left behind, but
+          will be wandering the streets looking foolish – don’t be foolish. We
+          hope you’re excited to attend Gorstonbury and we look forward to
+          seeing you soon!
+        </p>
+      </div>
+      <div className="p-8 pt-0">
         <h2 className="text-secondary-500 text-4xl font-bold">Queue Rules</h2>
         <p className="text-white my-2">
           Yes, rules – how else can we contain the fun. Your Security Team has
@@ -108,6 +126,7 @@ const Gallery = () => {
           the festival at any time.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -34,15 +34,12 @@ const CountdownBanner: React.FC<CountdownBannerProps> = ({ date }) => {
     };
   });
   return (
-    <div className="bg-primary-500 text-secondary-500 py-2 text-center text-sm font-medium">
+    <div className="bg-[#FCD34D] py-2 text-center text-sm font-medium">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-center gap-2">
           <CalendarIcon className="h-4 w-4" />
-          <span>
-            Glastonbury Festival starts in {calculateTimeLeft()}
-            <span className="font-bold">
-              <div />
-            </span>
+          <span className="font-bold">
+            Gorstonbury Festival starts in {calculateTimeLeft()}
           </span>
         </div>
       </div>

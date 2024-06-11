@@ -7,6 +7,7 @@ import Link from "next/link";
 import CalendarIcon from "@/components/CalendarIcon";
 import Header from "@/components/blocks/Header";
 import CountdownBanner from "@/components/blocks/CountdownBanner";
+import Footer from "@/components/blocks/Footer";
 
 export default function Component() {
   return (
@@ -42,29 +43,7 @@ export default function Component() {
           <div className="absolute top-0 inset-x-0 h-1/3 bg-gradient-to-b from-transparent via-primary-500 to-transparent z-10"></div>
           <div className="absolute w-full z-30">
             <div className="grid center grid-cols-2 md:grid-cols-4 md:max-w-[75%] md:m-auto w-full gap-1">
-              <a>
-                <div className=" h-40 w-100 p-2">
-                  <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
-                    <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
-                    <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
-                      June 29 2024
-                    </h2>
-                  </div>
-                </div>
-              </a>
-
-              <a href="/gallery">
-                <div className=" h-40 w-100 p-2">
-                  <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
-                    <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
-                    <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
-                      2023 Gorstonbury Photos
-                    </h2>
-                  </div>
-                </div>
-              </a>
-
-              <a href="/event">
+            <a href="/event">
                 <div className=" h-40 w-100 p-2">
                   <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
                     <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
@@ -85,28 +64,31 @@ export default function Component() {
                   </div>
                 </div>
               </a>
+              <a>
+                <div className=" h-40 w-100 p-2">
+                  <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
+                    <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
+                    <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
+                      2024 Line-Up
+                    </h2>
+                  </div>
+                </div>
+              </a>
+
+              <a href="/gallery">
+                <div className=" h-40 w-100 p-2">
+                  <div className="flex flex-col items-center justify-center h-full rounded bg-tertiary-700 p-2 text-center">
+                    <CalendarIcon className="w-12 h-12 text-[#F3F4F6]" />
+                    <h2 className="text-xl font-bold text-[#F3F4F6] mt-4">
+                      A Look Back At 2023
+                    </h2>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </section>
-        <section>
-          <div className="w-full p-4 pt-8 md:p-8">
-            <h2 className="text-3xl text-[#FCD34D] text-bold">
-              Welcome to Gorestonbury 2024!
-            </h2>
-            <p className="text-white">
-              We hope you’re excited. By now you will have received your ticket
-              bundle in the post, along with some small bits and bobs to get you
-              festival-ready. Please keep your ticket safe, as you will need
-              this to enter the festival. The event will be taking place on
-              Saturday 29th June. Arrival time will be 4pm – 4.10pm, NO LATER.
-              All attendees must arrive within this timeframe, as you will be
-              let into the festival as a collective group. Any stragglers will
-              not only be left behind, but will be wandering the streets looking
-              foolish – don’t be foolish. We hope you’re excited to attend
-              Gorestonbury and we look forward to seeing you soon!
-            </p>
-          </div>
-        </section>
+        
         {/* <section
           id="event-details"
           className="w-full py-12 md:py-24 lg:py-32 dark:bg-[#1F2937]"
@@ -239,165 +221,7 @@ export default function Component() {
           </div>
         </section> */}
       </main>
-      <footer className="bg-primary-400 text-[#F3F4F6] p-6 md:py-12 w-full">
-        <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
-          <div className="grid gap-1">
-            <h3 className="font-semibold text-[#FCD34D]">Festival</h3>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              About
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              History
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Sustainability
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Contact
-            </Link>
-          </div>
-          <div className="grid gap-1">
-            <h3 className="font-semibold text-[#FCD34D]">Lineup</h3>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Headliners
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Performers
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Stages
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Schedule
-            </Link>
-          </div>
-          <div className="grid gap-1">
-            <h3 className="font-semibold text-[#FCD34D]">Tickets</h3>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Purchase
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Resale
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Packages
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              FAQ
-            </Link>
-          </div>
-          <div className="grid gap-1">
-            <h3 className="font-semibold text-[#FCD34D]">Venue</h3>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Map
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Camping
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Accessibility
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Travel
-            </Link>
-          </div>
-          <div className="grid gap-1">
-            <h3 className="font-semibold text-[#FCD34D]">Follow Us</h3>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Facebook
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Twitter
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              Instagram
-            </Link>
-            <Link
-              href="fake"
-              className="hover:underline underline-offset-4 text-[#F3F4F6]"
-              prefetch={false}
-            >
-              YouTube
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }

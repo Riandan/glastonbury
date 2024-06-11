@@ -27,14 +27,14 @@ const Header: React.FC<Props> = (props) => {
         Event Details
       </Link>
       <Link
-        href="#"
+        href="/lineup"
         className="text-sm font-medium hover:underline underline-offset-4 text-secondary-500"
         prefetch={false}
       >
         Lineup
       </Link>
       <Link
-        href="#"
+        href="/ticket-info"
         className="text-sm font-medium hover:underline underline-offset-4 text-secondary-500"
         prefetch={false}
       >

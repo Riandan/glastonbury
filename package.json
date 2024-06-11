@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-modal-image": "^2.6.3",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.9.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-grid-gallery": "^1.0.1"
+    "react-grid-gallery": "^1.0.1",
+    "react-image-lightbox": "^5.1.4",
+    "react-modal-image": "^2.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",

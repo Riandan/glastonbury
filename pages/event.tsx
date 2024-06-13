@@ -26,13 +26,13 @@ const Gallery = () => {
           Welcome to Gorstonbury 2024!
         </h2>
         <p className="text-white my-2">
-          We hope you’re excited. By now you will have received your ticket
-          bundle in the post, along with some small bits and bobs to get you
-          festival-ready. Please keep your ticket safe, as you will need this to
-          enter the festival. The event will be taking place on Saturday 29th
-          June. Arrival time will be 4pm – 4.10pm, NO LATER. All attendees must
-          arrive within this timeframe, as you will be let into the festival as
-          a collective group. Any stragglers will not only be left behind, but
+          We hope you’re excited. By now you will have received your ticket in
+          the post to let you know you've been accepted into this year's event.
+          Please keep your ticket safe, as you will need this to enter the
+          festival. The event will be taking place on Saturday 29th June.
+          Arrival time will be 4pm – 4.10pm, NO LATER. All attendees must arrive
+          within this timeframe, as you will be let into the festival as a
+          collective group. Any stragglers will not only be left behind, but
           will be wandering the streets looking foolish – don’t be foolish. We
           hope you’re excited to attend Gorstonbury and we look forward to
           seeing you soon!
@@ -47,27 +47,31 @@ const Gallery = () => {
           to enter the festival. No checkpoint can be skipped and any person(s)
           unwilling to cooperate will be asked to leave.
         </p>
-        <p className="text-white my-2">
-          Upon arrival, you will: Be greeted by our Front Of House Security.
-          They will show you to your place in the queue. Please read any and all
-          signs regarding entry as you wait.
-        </p>
-        <p className="text-white my-2">
-          Be observed by our Head Of Security thoroughly – this includes
-          ensuring you are not already over the drinking limit and/or on drugs
-          (i.e. smacked off your tits).
-        </p>
-        <p className="text-white my-2">
-          Be searched by our Contraband Lead. They may ask you to lift your
-          shirt or strip down, please don’t be offended if any rubber gloves are
-          introduced. Any contraband found must be consumed in a single shot as
-          punishment.
-        </p>
-        <p className="text-white my-2">
-          Be scanned by our Events Manager who will ensure your ticket is legit.
-          If they deem your ticket a fake, you will be turned away and escorted
-          from the premises.
-        </p>
+        <p className="text-white my-2">Upon arrival, you will:</p>
+        <ul className="list-disc">
+          <li className="text-white ml-8 font-semibold mb-2">
+            Be greeted by our Meet N Greet. They will show you to your place in
+            the queue. Please read any and all signs regarding entry as you
+            wait.
+          </li>
+          <li className="text-white ml-8 font-semibold mb-2">
+            Be observed by our Head Of Security. This includes a thorough search
+            to ensure you are not already over the drinking limit and/or on
+            drugs (i.e. smacked off your tits).
+          </li>
+          <li className="text-white ml-8 font-semibold mb-2">
+            Be checked by our Contraband Search. They may ask you to lift your
+            shirt or strip down, please don’t be offended if rubber gloves are
+            introduced. A maximum of 4 contraband items must be brought to the
+            event, any found will result in a single shot as punishment or your
+            item taken away.
+          </li>
+          <li className="text-white ml-8 font-semibold mb-2">
+            Be scanned by our Events Manager who will ensure your ticket is
+            legit. If they deem your ticket a fake, you will be turned away and
+            escorted from the premises.
+          </li>
+        </ul>
         <p className="text-white my-2">
           If you complete all checkpoints of the queue, you will be free to
           enjoy the festival at your leisure. Any rulebreakers will be
@@ -81,7 +85,6 @@ const Gallery = () => {
         <h2 className="text-secondary-500 text-4xl font-bold">
           Terms and Conditions
         </h2>
-        <p className="text-white my-2">T&Cs: The Need To Knows</p>
         <p className="text-white my-2">
           Now, onto the bits everyone often skips… but this time, they’re
           actually important!
@@ -116,14 +119,6 @@ const Gallery = () => {
           <span className="font-bold">Weather –</span> Unfortunately, we live in
           Britain and if the weather takes a turn for the worst, the event will
           be cancelled. You’ll be informed beforehand if this is sadly the case.
-        </p>
-        <p className="text-white my-2">
-          <span className="font-bold">Plus Ones –</span> This festival is
-          strictly reserved to those who have, or have had, the title of the
-          ‘Gore’ surname. If you do not have ‘Gore’ in your surname but have
-          been granted a ticket, you will be allowed entry once you pass the
-          checkpoints. No person(s) without a ticket will be allowed to enter
-          the festival at any time.
         </p>
       </div>
       <Footer />

@@ -1,11 +1,7 @@
 // Import dependencies
 import Header from "@/components/blocks/Header";
-import Jordan from "../images/jordan.jpg";
-import Image from "next/image";
 
-import { Gallery as GalleryGrid } from "react-grid-gallery";
 import CountdownBanner from "@/components/blocks/CountdownBanner";
-import ModalImage from "react-modal-image";
 import Footer from "@/components/blocks/Footer";
 
 // Define the page component
@@ -30,9 +26,10 @@ const Gallery = () => {
         <p className="text-white my-2">
           All tickets have now been dispatched and delivered to all successful
           applicants. Please note, having a ticket does NOT grant you access to
-          the festival. As stated above, you will enter a series of queue
-          checkpoints before you can enter the venue – failure to complete a
-          checkpoint, failure to enter.
+          the festival. As stated on the Event Details page, you will enter a
+          series of queue checkpoints before you can enter the venue – failure
+          to complete a checkpoint, failure to enter. The ticket you have
+          received in the post MUST be brought with you on the day of the event.
         </p>
         <p className="text-white my-2">
           The ticket in your bundle must be brought to the event on the day.
@@ -40,12 +37,15 @@ const Gallery = () => {
       </div>
 
       <div className="p-8 pt-0">
-        <h2 className="text-secondary-500 text-4xl font-bold">VIPs</h2>
+        <h2 className="text-secondary-500 text-4xl font-bold">Extras</h2>
         <p className="text-white my-2">
-          This year, as a series of fantastic applications were received, a
-          handful of VIP guests have been selected for their efforts – VIPs will
-          receive an upgraded package on the day of the event. You will be
-          informed if you have been selected in due course.
+          Once you have successfully entered the festival, your ticket will
+          grant you access to a lovely outdoor toilet, seating areas and a bar.
+          Drinks can be purchased on sight, however our prices have increased
+          since last year due to inflation (i.e. recuperating back spends on
+          this year's event). A SMALL selection of food will be available on the
+          day, but please feel free to bring your own dishes to share amongst
+          others if you feel so inclined.
         </p>
       </div>
       <Footer />

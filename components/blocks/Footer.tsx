@@ -6,28 +6,28 @@ const Footer = () => {
         <div className="grid gap-1">
           <h3 className="font-semibold text-[#FCD34D]">Festival</h3>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             About
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             History
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Sustainability
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
@@ -37,28 +37,28 @@ const Footer = () => {
         <div className="grid gap-1">
           <h3 className="font-semibold text-[#FCD34D]">Lineup</h3>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Headliners
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Performers
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Stages
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
@@ -68,28 +68,28 @@ const Footer = () => {
         <div className="grid gap-1">
           <h3 className="font-semibold text-[#FCD34D]">Tickets</h3>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Purchase
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Resale
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Packages
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
@@ -99,28 +99,28 @@ const Footer = () => {
         <div className="grid gap-1">
           <h3 className="font-semibold text-[#FCD34D]">Venue</h3>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Map
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Camping
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Accessibility
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
@@ -130,28 +130,28 @@ const Footer = () => {
         <div className="grid gap-1">
           <h3 className="font-semibold text-[#FCD34D]">Follow Us</h3>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Facebook
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Twitter
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >
             Instagram
           </Link>
           <Link
-            href="fake"
+            href="/nope"
             className="hover:underline underline-offset-4 text-[#F3F4F6]"
             prefetch={false}
           >

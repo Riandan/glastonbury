@@ -3,9 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/lineup": "pages/lineup.js",
-  "/nope": "pages/nope.js",
-  "/event": "pages/event.js",
-  "/ticket-info": "pages/ticket-info.js",
-  "/gallery": "pages/gallery.js"
+  "/invite/[id]": "pages/invite/[id].js"
 }

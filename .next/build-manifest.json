@@ -27,30 +27,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/event": [
+    "/invite/[id]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/event.js"
-    ],
-    "/gallery": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/gallery.js"
-    ],
-    "/lineup": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/lineup.js"
-    ],
-    "/nope": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/nope.js"
-    ],
-    "/ticket-info": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/ticket-info.js"
+      "static/chunks/pages/invite/[id].js"
     ]
   },
   "ampFirstPages": []

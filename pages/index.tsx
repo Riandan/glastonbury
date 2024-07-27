@@ -12,7 +12,7 @@ import Footer from "@/components/blocks/Footer";
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100vh] bg-primary-500">
-      <CountdownBanner date={new Date("2024-06-29")} />
+      <CountdownBanner date={new Date("2024-07-27 17:00:00")} />
 
       <Header />
 

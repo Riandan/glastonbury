@@ -349,7 +349,7 @@ const Gallery = () => {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <div className="bg-primary-500">
-      <CountdownBanner date={new Date("2024-06-29")} />
+      <CountdownBanner date={new Date("2024-07-27 17:00:00")} />
       <Header />
       <Modal
         show={showModal}

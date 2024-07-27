@@ -11,7 +11,7 @@ import Footer from "@/components/blocks/Footer";
 const Gallery = () => {
   return (
     <div className="bg-primary-500 min-h-[vh-100]">
-      <CountdownBanner date={new Date("2024-06-29")} />
+      <CountdownBanner date={new Date("2024-07-27 17:00:00")} />
       <Header />
       <div className="z-10 h-full text-center w-full inset-y-16 p-6">
         <h1 className="text-6xl font-bold tracking-tighter  md:text-7xl text-[#FCD34D]">

@@ -22,10 +22,9 @@ const InvitePage = ({ id }: { id: string }) => {
     setLoading(false);
   }, 2500);
 
-  const data = mapping.find(m => m.id === id) ?? {id : 1, name: "Extra Guest", status: "Accepted", codeName: "Riff Raff", image: ""}
+  const data = mapping.find(m => m.id === id) ?? {id : 1, name: "Extra Guest", status: "Accepted", codeName: "Riff Raff", image: "", statusColour: "text-lime-600", statusSize: "50px"};
   return (
     <>
-      {/* <CountdownBanner date={new Date("2024-07-27 17:00:00")} /> */}
       
       <Header />
       <div className="bg-primary-400 min-h-[100vh] text-white flex justify-center">
@@ -59,10 +58,10 @@ const InvitePage = ({ id }: { id: string }) => {
                 </h2>
                 <br />
                 <br />
-                <h2 className="text-3xl font-bold">STATUS: {loading ? <Spinner size={"xl"} /> : ""}</h2>
+                <h2 className="text-3xl font-bold text-wrap">STATUS: {loading ? <Spinner size={"xl"} /> : ""}</h2>
                 <span
-                  className="text-lime-600 font-bold"
-                  style={{ fontSize: "80px" }}
+                  style={{ fontSize: data.statusSize }}
+                  className={`${data.statusColour} font-bold`}
                 >
                   {!loading ? data.status : ""}
                   
@@ -82,112 +81,144 @@ const mapping = [
     name: "Jordan Gore",
     codeName: "The Favourite Child",
     status: "Accepted",
-    image: "/images/invites/jord.jpg"
+    image: "/images/invites/jord.jpg",
+    statusColour: "text-lime-600",
+    statusSize: "80px"
   },
   {
     id: "3",
     name: "Deborah Gore",
     codeName: "Breakfast Lady",
     status: "Accepted",
-    image: "/images/invites/deb.jpg"
+    image: "/images/invites/deb.jpg",
+    statusColour: "text-lime-600",
+    statusSize: "80px"
   },
   {
     id: "4",
     name: "Michael Gore",
     codeName: "Mr Worldwide",
     status: "Excommunicado",
-    image: "/images/invites/mike.jpg"
+    image: "/images/invites/mike.jpg",
+    statusColour: "text-red-600",
+    statusSize: "55px"
   },
   {
     id: "5",
     name: "Tayla Gore",
     codeName: "Basic Bitch",
     status: "Accepted",
-    image: "/images/invites/tay.jpg"
+    image: "/images/invites/tay.jpg",
+    statusColour: "text-lime-600",
+    statusSize: "80px"
   },
   {
     id: "7",
     name: "Ian Gore",
     codeName: "The Transponder",
     status: "Check Again",
-    image: "/images/invites/ian.jpg"
+    image: "/images/invites/ian.jpg",
+    statusColour: "text-red-600",
+    statusSize: "55px"
   },
   {
     id: "8",
     name: "Karen Pocock Gore",
     codeName: "Party Animal",
     status: "Check Again",
-    image: "/images/invites/karen.jpg"
+    image: "/images/invites/karen.jpg",
+    statusColour: "text-red-600",
+    statusSize: "55px"
   },
   {
     id: "9",
     name: "Kyle Ryan",
     codeName: "Secret Meat Eater",
     status: "Accepted",
-    image: "/images/invites/ky.jpg"
+    image: "/images/invites/ky.jpg",
+    statusColour: "text-lime-600",
+    statusSize: "80px"
   },
   {
     id: "10",
     name: "Ste Ryan",
     codeName: "Mr Happy",
     status: "Accepted",
-    image: "/images/invites/ste.jpg"
+    image: "/images/invites/ste.jpg",
+    statusColour: "text-lime-600",
+    statusSize: "80px"
   },
   {
     id: "11",
     name: "Brooklyn Gore",
     codeName: "Cousin Morris",
     status: "Accepted",
-    image: "/images/invites/bro.jpg"
+    image: "/images/invites/bro.jpg",
+    statusColour: "text-lime-600",
+    statusSize: "80px"
   },
   {
     id: "12",
     name: "Aidan Gore",
     codeName: "Stumps",
     status: "Disabled",
-    image: "/images/invites/aid.jpg"
+    image: "/images/invites/aid.jpg",
+    statusColour: "text-blue-600",
+    statusSize: "50px"
   },
   {
     id: "13",
     name: "Daniel",
     codeName: "Curly Headed Fuck",
     status: "Accepted",
-    image: "/images/invites/dan.jpg"
+    image: "/images/invites/dan.jpg",
+    statusColour: "text-lime-600",
+    statusSize: "80px"
   },
   {
     id: "14",
     name: "P Gore",
     codeName: "Rocket Man",
     status: "Blue Badge",
-    image: "/images/invites/p.jpg"
+    image: "/images/invites/p.jpg",
+    statusColour: "text-blue-600",
+    statusSize: "50px"
   },
   {
     id: "15",
     name: "Geoffry Gore",
     codeName: "The Referee",
     status: "Blue Badge",
-    image: "/images/invites/geoff.jpg"
+    image: "/images/invites/geoff.jpg",
+    statusColour: "text-blue-600",
+    statusSize: "50px"
   },
   {
     id: "16",
     name: "Simon Gore",
     codeName: "Sherminator",
     status: "Accepted",
-    image: "/images/invites/si.jpg"
+    image: "/images/invites/si.jpg",
+    statusColour: "text-lime-600",
+    statusSize: "80px"
   },
   {
     id: "17",
     name: "Shauna Gore",
     codeName: "Booster Seat",
     status: "Check Again",
-    image: "/images/invites/shauna.jpg"
+    image: "/images/invites/shauna.jpg",
+    statusColour: "text-red-600",
+    statusSize: "55px"
   },
   {
     id: "18",
     name: "Jay",
     codeName: "Virgin",
     status: "Flight Risk",
-    image: "/images/invites/jay.jpg"
+    image: "/images/invites/jay.jpg",
+    statusColour: "text-orange-600",
+    statusSize: "55px"
   },
 ];
 
